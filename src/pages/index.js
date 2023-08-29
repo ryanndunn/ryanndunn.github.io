@@ -1,5 +1,9 @@
 import * as React from 'react'
+import "../styles/home.scss";
+
 import Layout from '../components/layout'
+import Seo from '../components/seo'
+
 
 const IndexPage = () => {
   return (
@@ -9,4 +13,5 @@ const IndexPage = () => {
   )
 }
 
+export const Head = () => <Seo title="Home" />
 export default IndexPage

@@ -1,6 +1,9 @@
 import * as React from 'react'
+import "../../styles/portfolio-single.scss";
+
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 const WorkPost = ({ data, children }) => {
   return (
@@ -20,4 +23,5 @@ export const query = graphql`
     }
   }`
 
+export const Head = () => <Seo title="Portfolio Single" />
 export default WorkPost

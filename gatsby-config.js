@@ -3,12 +3,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Ryan Dunn Portfolio`,
+    title: `Ryan Dunn's Portfolio Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -16,6 +18,22 @@ module.exports = {
         path: `${__dirname}/work`,
       }
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Bebas Neue`,
+            file: `https://fonts.googleapis.com/css2?family=Bebas+Neue`,
+          },
+          {
+            name: `Raleway`,
+            file: `https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&display=swap`,
+          },
+        ],
+      },
+    },
   ],
 }

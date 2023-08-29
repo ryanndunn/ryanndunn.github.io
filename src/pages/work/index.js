@@ -1,6 +1,9 @@
 import * as React from 'react'
+import "../../styles/portfolio-archive.scss";
+
 import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'
+import Seo from '../../components/seo'
 
 const WorkPage = ({ data }) => {
   return (
@@ -36,4 +39,5 @@ query MyQuery {
   }
 `
 
+export const Head = () => <Seo title="Portfolio Archive" />
 export default WorkPage

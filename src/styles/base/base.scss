@@ -1,0 +1,30 @@
+@import
+  './variables',
+  './normalize',
+  './typography';
+
+  html {
+    background-color: $color-background;
+    box-sizing: border-box;
+    color: $color-text;
+    font-family: $font-paragraph;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width:100vw !important;
+  
+  
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+  }
+  
+  body {
+    width:100vw !important;
+    overflow-x: hidden;
+  }
