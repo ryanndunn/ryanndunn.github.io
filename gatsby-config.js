@@ -6,5 +6,16 @@ module.exports = {
     title: `Ryan Dunn Portfolio`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `work`,
+        path: `${__dirname}/work`,
+      }
+    },
+    "gatsby-plugin-mdx",
+  ],
 }
