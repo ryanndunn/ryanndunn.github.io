@@ -1,11 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import logo from "../images/logo.svg"
 
 const Head = () => {
 
   return (
     <header>
-      <div className="logo"><Link to="/">Ryan Dunn</Link></div>
+      <div className="logo">
+        <Link to="/">
+            <img
+                alt="Ryan Dunn Web Developer"
+                src={logo}
+            />
+        </Link>
+    </div>
       <div className="social">
         <ul>
             <li><Link to="https://www.linkedin.com/in/ryan-dunn-2801aa13/" target="_blank"><i class="fa-brands fa-linkedin"></i></Link></li>

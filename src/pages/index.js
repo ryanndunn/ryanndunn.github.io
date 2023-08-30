@@ -1,14 +1,19 @@
 import * as React from 'react'
-import "../styles/home.scss";
+import "../styles/style.scss";
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>Home Page</h1>
+      <StaticImage
+          className="rd-photo"
+          src="../images/rd-photo.png"
+          placeholder="none"
+        />
     </Layout>
   )
 }

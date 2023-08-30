@@ -1,5 +1,4 @@
 import * as React from 'react'
-import "../../styles/portfolio-archive.scss";
 
 import { graphql, Link } from 'gatsby'
 import Layout from '../../components/layout'

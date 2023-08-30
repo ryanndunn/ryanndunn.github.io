@@ -1,9 +1,4 @@
-@import
-  './variables',
-  './normalize',
-  './typography';
-
-  html {
+ html {
     background-color: $color-background;
     box-sizing: border-box;
     color: $color-text;
@@ -27,4 +22,37 @@
   body {
     width:100vw !important;
     overflow-x: hidden;
+    padding-top:300px;
+  }
+
+  //Site Global Styles
+  .bg-img{position:absolute; top:0; left:0; width:100vw; height:100vh; mix-blend-mode:hard-light; opacity:.15;}
+
+  //Site Header
+  header{width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; top:0; left:0; padding:3rem; 
+    
+    .logo{width:100%; max-width:300px;
+        a{display:block;
+            img{width:100%;}
+        }
+    }
+
+    .social{
+        ul{list-style-type:none; display:flex; gap:2rem; margin:0; padding:0;
+            li{
+                a{
+                    i{font-size:2rem; color:$color-brand;}
+                }
+            }
+        }
+    }
+  }
+
+  //Site Navigation
+  nav{position:fixed; bottom:0; left:0; width:100%; display:flex; justify-content:center; padding:3rem;
+    ul{list-style-type:none; display:flex; justify-content:center; gap:200px; margin:0; padding:0;
+        li{
+            a{font-family:$font-heading; color:$color-brand; text-decoration:none; font-size:1.5rem;}
+        }
+    }
   }
