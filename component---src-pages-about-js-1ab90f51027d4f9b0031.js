@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkryan_dunn_portfolio=self.webpackChunkryan_dunn_portfolio||[]).push([[682],{5465:function(e,n,t){t.r(n),t.d(n,{Head:function(){return o}});var u=t(7294),l=t(5356),r=t(9357);const o=()=>u.createElement(r.Z,{title:"About"});n.default=()=>u.createElement(l.Z,null,u.createElement("h1",null,"About Me"))}}]);
+//# sourceMappingURL=component---src-pages-about-js-1ab90f51027d4f9b0031.js.map
