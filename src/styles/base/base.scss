@@ -22,14 +22,13 @@
   body {
     width:100vw !important;
     overflow-x: hidden;
-    padding-top:300px;
   }
 
   //Site Global Styles
-  .bg-img{position:absolute; top:0; left:0; width:100vw; height:100vh; mix-blend-mode:hard-light; opacity:.15;}
+  .bg-img{position:fixed; top:0; left:0; width:100vw; height:100vh; mix-blend-mode:hard-light; opacity:.15; z-index:-1;}
 
   //Site Header
-  header{width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; top:0; left:0; padding:3rem; 
+  header{width:100%; position:fixed; display:flex; justify-content:space-between; align-items:center; top:0; left:0; height:200px; padding:0 3rem; z-index:999;
     
     .logo{width:100%; max-width:300px;
         a{display:block;
@@ -48,8 +47,11 @@
     }
   }
 
+  //Site Main
+  main{width:100vw; min-height:100vh; padding:200px 0 0; position:relative;}
+
   //Site Navigation
-  nav{position:fixed; bottom:0; left:0; width:100%; display:flex; justify-content:center; padding:3rem;
+  nav{position:fixed; bottom:0; left:0; width:100%; display:flex; justify-content:center; padding:3rem; z-index:999;
     ul{list-style-type:none; display:flex; justify-content:center; gap:200px; margin:0; padding:0;
         li{
             a{font-family:$font-heading; color:$color-brand; text-decoration:none; font-size:1.5rem;}

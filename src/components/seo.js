@@ -15,7 +15,7 @@ const Seo = ({ title }) => {
   return (
     <>
         <title>{title} | {data.site.siteMetadata.title}</title>
-        <script src="https://kit.fontawesome.com/26870a12cb.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/26870a12cb.js" crossOrigin="anonymous"></script>
     </>
   )
 }

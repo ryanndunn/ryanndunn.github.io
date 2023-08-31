@@ -6,7 +6,7 @@ import Seo from '../../components/seo'
 
 const WorkPost = ({ data, children }) => {
   return (
-    <Layout>
+    <Layout pageContainerClass="page--work-single">
       <h1>{data.mdx.frontmatter.title}</h1>
       {children}
     </Layout>

@@ -3,12 +3,13 @@ import Head from './head'
 import Nav from './nav'
 import { StaticImage } from 'gatsby-plugin-image'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageContainerClass }) => {
     return (
-        <div>
+        <div className={pageContainerClass}>
         <StaticImage
           className="bg-img"
           src="../images/rd-bg.png"
+          alt="Background Image for Ryan Dunn Portfolio Site"
         />
           <Head/>
             <main>

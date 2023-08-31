@@ -8,11 +8,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout pageContainerClass="page--home">
       <StaticImage
           className="rd-photo"
           src="../images/rd-photo.png"
           placeholder="none"
+          alt="Ryan Dunn's Photo"
         />
     </Layout>
   )

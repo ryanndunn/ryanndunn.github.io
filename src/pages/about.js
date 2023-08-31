@@ -5,7 +5,7 @@ import Seo from '../components/seo'
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <Layout pageContainerClass="page--about">
         <h1>About Me</h1>
     </Layout>
   )
