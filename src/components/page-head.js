@@ -3,6 +3,11 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const PageHead = ({ img, title }) => {
 
+  const isBrowser = typeof window !== "undefined";
+  if (!isBrowser) {
+    return;
+  }
+
   function moveImages() {
     
     const windowScrollTop = window.scrollY || window.pageYOffset;
