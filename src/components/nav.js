@@ -13,7 +13,7 @@ const Nav = () => {
             <Link to="/about">About</Link>
         </li>
         <li>
-            <Link to="/">Resume</Link>
+            <a href={'/ryan-dunn-resume-public.pdf'} target="_blank" rel="noreferrer">Resume</a>
         </li>
       </ul>
     </nav>

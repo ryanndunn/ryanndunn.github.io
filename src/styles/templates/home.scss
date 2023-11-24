@@ -1,3 +1,18 @@
 .page--home{
-  .rd-photo{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); height:70vh; width:70vh; max-height:1000px; max-width:1000px; mix-blend-mode:hard-light; opacity:1;}
+  .bg-img{display:block;}
+  header{background-color:transparent;
+
+    @media (min-width: $breakpoint-tablet) {
+      height:200px;
+    }
+
+    .logo{max-width:300px;}
+  }
+  .rd-photo{position:absolute; top:60%; left:50%; transform:translate(-50%,-50%); height:70vh; width:70vh; max-height:1000px; max-width:1000px; mix-blend-mode:hard-light; opacity:1;
+    
+    @media (min-width: $breakpoint-tablet) {
+      top:50%;
+    }
+
+  }
 }

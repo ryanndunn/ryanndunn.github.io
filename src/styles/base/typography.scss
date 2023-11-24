@@ -10,3 +10,7 @@ h5,
 .h5,
 h6,
 .h6 {font-family:$font-heading; color:$color-brand; font-weight:400;}
+
+a{text-decoration:none; text-underline-offset:5px;
+    &:hover{text-decoration:underline;}
+}

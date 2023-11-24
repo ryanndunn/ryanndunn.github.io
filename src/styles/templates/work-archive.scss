@@ -20,12 +20,22 @@
                 }
 
                 h2{padding:0; margin:0; display:flex;
-                    a{text-decoration:none; font-size:7rem; color:$color-brand; line-height:7rem; white-space:nowrap; display:block; padding:4rem 7rem 4rem 3rem; margin:3rem 0; opacity:.1; pointer-events:none; border-top-right-radius:4rem; border-bottom-right-radius:4rem;}
+                    a{text-decoration:none; font-size:4rem; color:$color-brand; display:block; padding:2rem 2rem 2rem 3rem; margin:3rem 0; opacity:.1; pointer-events:none; border-top-right-radius:2rem; border-bottom-right-radius:2rem; background-color:$color-background;
+                        
+                        @media (min-width: $breakpoint-tablet-horizontal) {
+                            font-size:7rem; white-space:nowrap; line-height:7rem; background-color:transparent; padding-top:4rem; padding-bottom:4rem; padding-right:7rem; border-top-right-radius:4rem; border-bottom-right-radius:4rem;
+                        }
+
+                    }
                 }
             }
         }
 
-        &.work-images{position:fixed; left:40vw; top:50%; transform:translateY(-50%); height:80vh; width:80vh; mix-blend-mode:hard-light; filter:grayscale(0.8); opacity:.4; z-index:5;
+        &.work-images{position:fixed; left:40vw; top:50%; transform:translateY(-50%); height:80vh; width:80vh; z-index:5;
+
+            @media (min-width: $breakpoint-tablet-horizontal) {
+                mix-blend-mode:hard-light; filter:grayscale(0.8); opacity:.4;
+            }
 
             &.hovered{mix-blend-mode:unset; filter:grayscale(0); opacity:1;}
 
@@ -41,7 +51,12 @@
 
     }
 
-    i.fa-arrow-right{font-size:6rem; color:$color-text; position:fixed; top:calc(50% + 30vh); left:calc(40vw + 40vh); transform:translate(-50%,-50%) rotate(-45deg); z-index:15;
+    i.fa-arrow-right{font-size:6rem; color:$color-text; position:fixed; top:calc(50% + 30vh); left:calc(40vw + 40vh); transform:translate(-50%,-50%) rotate(-45deg); z-index:15; pointer-events:none; display:none;
+
+        @media (min-width: $breakpoint-tablet-horizontal) {
+            display:block;
+        }
+
         &.hovered{color:#fff;}
     }
 

@@ -24,14 +24,24 @@ const WorkPage = ({ data }) => {
             const itemBottom = itemTop + item.offsetHeight;
             const itemProject = item.getAttribute('data-project');
             const itemImage = document.querySelector('ul.work-images > li[data-project='+itemProject+']');
-        
-            if (scrollPosition >= itemTop && scrollPosition < itemBottom) {
-              item.classList.add('active');
-              itemImage.classList.add('active');
-            } else {
-              item.classList.remove('active');
-              itemImage.classList.remove('active');
+
+            if(itemImage){
+
+              if (scrollPosition >= itemTop && scrollPosition < itemBottom) {
+                item.classList.add('active');
+                itemImage.classList.add('active');
+              } else {
+                if(item.classList.contains('active')){
+                  item.classList.remove('active');
+                }
+                
+                if(itemImage.classList.contains('active')){
+                  itemImage.classList.remove('active');
+                }
+              }
+
             }
+
           });
         };
         
