@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkryan_dunn_portfolio=self.webpackChunkryan_dunn_portfolio||[]).push([[682],{5465:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var a=n(7294),l=n(5356),o=n(9357);const r=()=>a.createElement(o.Z,{title:"About"});t.default=()=>a.createElement(l.Z,{pageContainerClass:"page--about"},a.createElement("div",{className:"page--content"},a.createElement("h1",null,"About Me")))}}]);
+//# sourceMappingURL=component---src-pages-about-js-a614468e56678c8c066e.js.map
