@@ -1,4 +1,6 @@
 import * as React from 'react'
+import "../styles/style.scss";
+
 import { Link } from 'gatsby'
 import logo from "../images/logo.svg"
 
