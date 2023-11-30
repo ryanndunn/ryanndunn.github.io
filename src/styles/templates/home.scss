@@ -1,5 +1,5 @@
 .page--home{
-  .bg-img{display:block;}
+  .bg-img{display:block !important;}
   header{background-color:transparent;
 
     @media (min-width: $breakpoint-tablet) {
