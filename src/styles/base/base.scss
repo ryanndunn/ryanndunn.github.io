@@ -77,8 +77,8 @@
 
   //Single Page Head
   .page--head{width:100%; max-width:1600px; margin:0 auto; padding:0 8vw;
-    &_img-contain{display:flex; width:calc(100% + 16vw); height:calc(60vh + 200px); overflow:hidden; justify-content:center; position:relative; margin-top:-200px; margin-left:-8vw; padding-top:200px;
-      .gatsby-image-wrapper{overflow:hidden; border-radius:100%; position:absolute; top:200px; height:70vh; width:70vh;}
+    &_img-contain{display:flex; width:calc(100% + 16vw); height:calc(45vh + 200px); overflow:hidden; justify-content:center; position:relative; margin-top:-200px; margin-left:-8vw; padding-top:200px;
+      .gatsby-image-wrapper{overflow:hidden; border-radius:100%; position:absolute; top:200px; height:60vh; width:60vh;}
     }
 
     h1{font-size:5rem; text-align:center; margin:0;
@@ -100,8 +100,39 @@
 
     p{color:$color-brand; line-height:1.75; font-size:1.1rem; }
 
-    .img--2-up{width:100%; display:flex; gap:2rem;
+    ul{color:$color-brand;
+      li{line-height:1.75;}
+    }
+
+    .intro-link{text-align:center;
+      p{margin:0; padding:0;}
+      a{display:block;
+        &:hover{
+          i{color:$color-brand;}
+        }
+        i{font-size:4rem; color:$color-accent;}
+      }
+    }
+
+    .img--1-up{width:100%; margin:4rem 0; background-color:$color-brand; padding:3rem; border-radius:20px;
       >span{display:block; width:100%; height:100%;}
     }
+
+    .img--2-up{width:100%; display:flex; flex-direction:column; gap:2rem; margin:4rem 0; background-color:$color-brand; padding:3rem; border-radius:20px;
+
+      @media (min-width: $breakpoint-tablet) {
+        flex-direction:row;
+      }
+
+      >span{display:block; width:100%; height:100%;}
+    }
+
+    blockquote{max-width:800px; width:100%; text-align:center; margin:4rem auto 6rem; position:relative;
+      &:after{content:''; height:.25rem; width:5rem; background-color:$color-accent; border-radius:5px; position:absolute; left:50%; transform:translateX(-50%); bottom:-2.5rem;}
+      //&:before{content:''; height:.25rem; width:5rem; background-color:$color-accent; border-radius:5px; position:absolute; left:50%; transform:translateX(-50%); top:-2.5rem;}
+      p{font-size:2rem; line-height:1.2; font-weight:600; margin:0;}
+    }
+
+
 
   }

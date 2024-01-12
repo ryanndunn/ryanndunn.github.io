@@ -126,22 +126,22 @@ const WorkPage = ({ data }) => {
 
 export const query = graphql`
 query MyQuery {
-    allMdx {
-      nodes {
-        frontmatter {
-          title
-          slug
-          featured_image {
-            childImageSharp {
-              gatsbyImageData
-            }
+  allMdx(sort: {frontmatter: {title: ASC}}) {
+    nodes {
+      frontmatter {
+        title
+        slug
+        featured_image {
+          childImageSharp {
+            gatsbyImageData
           }
         }
-        id
-        excerpt
       }
+      id
+      excerpt
     }
   }
+}
 `
 
 export const Head = () => <Seo title="Portfolio Archive" />
